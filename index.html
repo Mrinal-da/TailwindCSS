@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="../node_modules/boxicons/css/boxicons.min.css"
+    />
+    <link href="./output.css" rel="stylesheet" />
+    <!-- <script src="https://unpkg.com/@tailwindcss/browser@4"></script> -->
+    <link href="./input.css" rel="stylesheet" />
+  </head>
+  <body class="bg-slate-200">
+    <nav class="bg-zinc-700 p-4 shadow-lg sticky top-0">
+      <div class="container mx-auto flex justify-between items-center">
+        <div class="text-white font-bold">
+          <a href="#" class="text-3xl"
+            ><i class="bx bxs-home-smile mr-2"></i>Classy Furniture</a
+          >
+        </div>
+        <div class="hidden md:flex gap-8">
+          <a href="#" class="text-gray-300 hover:underline">Home</a>
+          <a href="#" class="text-gray-300 hover:underline">Services</a>
+          <a href="#" class="text-gray-300 hover-underline">Testimony</a>
+          <a href="#" class="text-gray-300 hover-underline">Contact</a>
+          <a href="#" class="text-gray-300 hover-underline">About</a>
+        </div>
+
+        <div class="md:hidden">
+          <button id="menu-btn" class="text-gray-300 hover:text-white">
+            <i class="bx bx-menu bx-md"></i>
+          </button>
+        </div>
+      </div>
+
+      <div id="mbl-menu" class="md:hidden mt-8 hidden">
+        <a href="#" class="text-gray-300 block hover:text-white p-2">Home</a>
+        <a href="#" class="text-gray-300 block hover:text-white p-2"
+          >Services</a
+        >
+        <a href="#" class="text-gray-300 block hover:text-white p-2"
+          >Testimony</a
+        >
+        <a href="#" class="text-gray-300 block hover:text-white p-2">Contact</a>
+        <a href="#" class="text-gray-300 block hover:text-white p-2">About</a>
+      </div>
+    </nav>
+    <section
+      class="h-screen flex items-center justify-center bg-center bg-no-repeat bg-fixed"
+      style="
+        background-image: linear-gradient(rgb(0, 0, 0, 1), rgba(0, 0, 0, 0.2)),
+          url('image/Logo.png');
+      "
+    >
+      <div class="md:w-1/2 text-center text-white p-8">
+        <h1 class="text-3xl md:text-6xl font-bold mb-4">
+          Transform Your Space with Our Premium Furnitures.
+        </h1>
+        <p class="text-lg md:text-xl text-pink-100 mb-4">
+          From cozy sofas to ergonomic chairs, our furniture is crafted to not
+          just enhance your living spaces but also to provide unmatched comfort
+          that turns every moment into a blissful experience.
+        </p>
+        <button class="btn">Shop Now</button>
+        <button class="btn">Explore</button>
+      </div>
+    </section>
+
+    <!-- Section for About -->
+    <section class="container mx-auto mt-24">
+      <div class="flex flex-col md:flex-row items-center gap-8 p-8 md:p-0">
+        <div
+          class="md:w-1/2 mb-6 md:mb-8 border border-dotted border-black p-2"
+        >
+          <img src="image/About.png" alt="About Us" />
+        </div>
+        <div class="w-1/2 md:ml-4">
+          <span class="text-slate-700 mb-4 block">
+            <i class="bx bx-briefcase-alt mr-2"></i>
+            <i>What we do.</i>
+          </span>
+
+          <h2 class="text-4xl font-bold mb-4 underline">About Us</h2>
+          <p class="text-gray-700 mb-4 leading-8">
+            At <strong>Classy Furniture</strong>, we believe that furniture is
+            more than just a collection of objects—it’s the soul of every home,
+            the backdrop of cherished memories, and a reflection of your
+            personal style. With a passion for craftsmanship and an eye for
+            detail, we create timeless pieces that blend functionality,
+            elegance, and comfort.
+          </p>
+          <p class="text-gray-700 mb-4 leading-8">
+            From cozy living rooms to inspiring workspaces, our designs are
+            thoughtfully curated to enhance every corner of your space. Using
+            the finest materials and sustainable practices, we ensure every
+            piece not only looks stunning but also stands the test of time.
+          </p>
+          <div>
+            <i class="bx bxl-facebook"></i>
+            <i class="bx bxl-instagram"></i>
+            <i class="bx bxl-youtube"></i>
+            <i class="bx bxl-twitter"></i>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section for Products -->
+    <section class="container mx-auto p-12 mt-16">
+      <div class="grid md:grid-cols-3 p-4 md:p-0 gap-8">
+        <div class="shadow-lg rounded-lg overflow-hidden bg-sky-100">
+          <img
+            src="image/f1.png"
+            class="w-150 h-80 object-cover hover:scale-[1.05] transition ease-in-out duration-300"
+            alt=""
+          />
+          <div class="p-6">
+            <h2 class="text-xl font-bold mb-2">Sofa Set</h2>
+            <p class="text-gray-700 mb-4">
+              Experience ultimate comfort and style with our premium sofa sets.
+              Designed to enhance your living space, each piece combines
+              elegance and durability, perfect for any home.
+            </p>
+            <del class="text-sm text-slate-400">$2200</del
+            ><span class="text-xl">$1599</span>
+          </div>
+        </div>
+        <div class="shadow-lg rounded-lg overflow-hidden bg-sky-100">
+          <img
+            src="image/f2.png"
+            class="w-150 h-80 object-cover hover:scale-[1.05] transition ease-in-out duration-300"
+            alt=""
+          />
+          <div class="p-6">
+            <h2 class="text-xl font-bold mb-2">Sofa Set</h2>
+            <p class="text-gray-700 mb-4">
+              Experience ultimate comfort and style with our premium sofa sets.
+              Designed to enhance your living space, each piece combines
+              elegance and durability, perfect for any home.
+            </p>
+            <del class="text-sm text-slate-400">$2200</del
+            ><span class="text-xl">$1599</span>
+          </div>
+        </div>
+        <div class="shadow-lg rounded-lg overflow-hidden bg-sky-100">
+          <img
+            src="image/f3.png"
+            class="w-150 h-80 object-cover hover:scale-[1.05] transition ease-in-out duration-300"
+            alt=""
+          />
+          <div class="p-6">
+            <h2 class="text-xl font-bold mb-2">Sofa Set</h2>
+            <p class="text-gray-700 mb-4">
+              Experience ultimate comfort and style with our premium sofa sets.
+              Designed to enhance your living space, each piece combines
+              elegance and durability, perfect for any home.
+            </p>
+            <del class="text-sm text-slate-400">$2200</del
+            ><span class="text-xl">$1599</span>
+          </div>
+        </div>
+        <div class="shadow-lg rounded-lg overflow-hidden bg-sky-100">
+          <img
+            src="image/f4.png"
+            class="w-150 h-80 object-cover hover:scale-[1.05] transition ease-in-out duration-300"
+            alt=""
+          />
+          <div class="p-6">
+            <h2 class="text-xl font-bold mb-2">Sofa Set</h2>
+            <p class="text-gray-700 mb-4">
+              Experience ultimate comfort and style with our premium sofa sets.
+              Designed to enhance your living space, each piece combines
+              elegance and durability, perfect for any home.
+            </p>
+            <del class="text-sm text-slate-400">$2200</del
+            ><span class="text-xl">$1599</span>
+          </div>
+        </div>
+        <div class="shadow-lg rounded-lg overflow-hidden bg-sky-100">
+          <img
+            src="image/f5.png"
+            class="w-150 h-80 object-cover hover:scale-[1.05] transition ease-in-out duration-300"
+            alt=""
+          />
+          <div class="p-6">
+            <h2 class="text-xl font-bold mb-2">Sofa Set</h2>
+            <p class="text-gray-700 mb-4">
+              Experience ultimate comfort and style with our premium sofa sets.
+              Designed to enhance your living space, each piece combines
+              elegance and durability, perfect for any home.
+            </p>
+            <del class="text-sm text-slate-400">$2200</del
+            ><span class="text-xl">$1599</span>
+          </div>
+        </div>
+        <div class="shadow-lg rounded-lg overflow-hidden bg-sky-100">
+          <img
+            src="image/f6.png"
+            class="w-150 h-80 object-cover hover:scale-[1.05] transition ease-in-out duration-300"
+            alt=""
+          />
+          <div class="p-6">
+            <h2 class="text-xl font-bold mb-2">Sofa Set</h2>
+            <p class="text-gray-700 mb-4">
+              Experience ultimate comfort and style with our premium sofa sets.
+              Designed to enhance your living space, each piece combines
+              elegance and durability, perfect for any home.
+            </p>
+            <del class="text-sm text-slate-400">$2200</del
+            ><span class="text-xl">$1599</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section for newsletter -->
+
+    <section class="mt-14">
+      <div class="bg-zinc-800 py-8">
+        <div class="container mx-auto flex flex-col-reverse md:flex-row">
+          <div class="md:w-1/2 mb-8 mt-8 mx-auto md:mb-0 flex gap-2">
+            <img
+              src="image/n1.png"
+              class="h-52 w-52 object-cover shadow-lg"
+              alt=""
+            />
+            <img
+              src="image/n2.png"
+              class="h-52 w-52 object-cover shadow-lg"
+              alt=""
+            />
+          </div>
+          <div class="md:w-1/2 ml-8">
+            <h2 class="text-2xl font-bold text-white mb-4">
+              Subscribe to our Newsletter
+            </h2>
+            <form class="relative mr-8">
+              <input
+                class="w-full px-4 py-2 relative bg-white"
+                type="email"
+                name="email"
+                id="email"
+                placeholder="Your email address"
+              />
+              <button class="absolute right-0 top-0 btn">Subscribe</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- section for Testimony -->
+
+    <section class="container mx-auto mt-16">
+      <h2 class="text-3xl font-semibold mb-8 text-center">Testimony</h2>
+      <div
+        class="bg-white p-6 mb-6 rounded-lg shadow-md flex items-center flex-col"
+      >
+        <img
+          src="image/t1.png"
+          class="h-20 w-20 rounded-full mx-auto object-cover"
+          alt=""
+        />
+        <p class="text-gray-700 mb-4 text-center">
+          "I am absolutely in love with my new sofa set! The quality is
+          exceptional, and it perfectly complements my living room decor."
+        </p>
+        <p class="font-semibold text-gray-600">– Chu Tillo.</p>
+      </div>
+      <div
+        class="bg-white p-6 mb-6 rounded-lg shadow-md flex items-center flex-col"
+      >
+        <img
+          src="image/t2.png"
+          class="h-20 w-20 rounded-full mx-auto object-cover"
+          alt=""
+        />
+        <p class="text-gray-700 mb-4 text-center">
+          "The dining table I purchased is both stylish and sturdy. It has
+          completely transformed our family meals. Highly recommended!"
+        </p>
+        <p class="font-semibold text-gray-600">– Tuntuna.</p>
+      </div>
+      <div
+        class="bg-white p-6 mb-6 rounded-lg shadow-md flex items-center flex-col"
+      >
+        <img
+          src="image/t3.png"
+          class="h-20 w-20 rounded-full mx-auto object-cover"
+          alt=""
+        />
+        <p class="text-gray-700 mb-4 text-center">
+          "Excellent craftsmanship and timely delivery! The furniture exceeded
+          my expectations in every way. I’ll definitely be coming back."
+        </p>
+        <p class="font-semibold text-gray-600">– Jhon Sins.</p>
+      </div>
+    </section>
+
+    <!-- footer section -->
+
+    <footer class="bg-zinc-800 text-white py-8 mt-20">
+      <div class="container flex flex-col md:flex-row justify-between">
+        <!-- col1 -->
+        <div class="mb-8">
+          <div class="text-white font-bold">
+            <a href="#" class="text-3xl"
+              ><i class="bx bxs-home-smile mr-2"></i>Classy Furniture</a
+            >
+          </div>
+        </div>
+        <!-- col2 -->
+        <div class="mb-8">
+          <h3 class="font-semibold mb-4">Link</h3>
+          <ul>
+            <li><a href="#" class="block hover:text-gray-400 mb-2">Home</a></li>
+            <li>
+              <a href="#" class="block hover:text-gray-400 mb-2">About</a>
+            </li>
+            <li>
+              <a href="#" class="block hover:text-gray-400 mb-2">Products</a>
+            </li>
+            <li>
+              <a href="#" class="block hover:text-gray-400 mb-2">Testimony</a>
+            </li>
+          </ul>
+        </div>
+        <!-- col3 -->
+        <div class="mb-8">
+          <h4 class="font-semibold mb-4">Contact</h4>
+          <ul>
+            <li><a href="#" class="block hover:text-gray-400 mb-2">FAQ</a></li>
+            <li><a href="#" class="block hover:text-gray-400 mb-2">Blog</a></li>
+            <li>
+              <a href="#" class="block hover:text-gray-400 mb-2">Contact</a>
+            </li>
+          </ul>
+        </div>
+        <!-- col4 -->
+        <div class="mb-8">
+          <h5 class="font-semibold mb-4">Social</h5>
+          <ul>
+            <li>
+              <a class="block hover:text-gray-400 mb-2" href="">98595 85621</a>
+            </li>
+            <li>
+              <a class="block hover:text-gray-400 mb-2" href=""
+                >classyfurniture@mail.com</a
+              >
+            </li>
+          </ul>
+          <div class="grid-col">
+            <i class="bx bxl-facebook"></i>
+            <i class="bx bxl-instagram"></i>
+            <i class="bx bxl-youtube"></i>
+            <i class="bx bxl-twitter"></i>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="app.js"></script>
+  </body>
+</html>
